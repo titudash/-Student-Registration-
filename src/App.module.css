@@ -1,0 +1,164 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #f8fafc;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: #6366f1;
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  color: #94a3b8;
+  font-size: 1.1rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.formSection {
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  background-color: #1e293b;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid #334155;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #e2e8f0;
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  background-color: #0f172a;
+  color: #f8fafc;
+  border: 1px solid #475569;
+  border-radius: 6px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.formGroup input::placeholder {
+  color: #64748b;
+}
+
+.formGroup input:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+.error {
+  color: #ef4444;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+.submitBtn:hover {
+  background-color: #4f46e5;
+}
+
+.submitBtn:active {
+  transform: scale(0.98);
+}
+
+.listSection {
+  margin-top: 2rem;
+}
+
+.listSection h2 {
+  text-align: center;
+  color: #e2e8f0;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.noStudents {
+  text-align: center;
+  color: #64748b;
+  font-style: italic;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.studentCard {
+  background-color: #1e293b;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-left: 5px solid #6366f1;
+  border-top: 1px solid #334155;
+  border-right: 1px solid #334155;
+  border-bottom: 1px solid #334155;
+  transition: transform 0.2s;
+}
+
+.studentCard:hover {
+  transform: translateY(-5px);
+}
+
+.cardTitle {
+  color: #6366f1;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #334155;
+  padding-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.cardInfo p {
+  margin: 0.5rem 0;
+  color: #cbd5e1;
+}
+
+.cardInfo strong {
+  color: #f8fafc;
+  display: inline-block;
+  width: 70px;
+}
